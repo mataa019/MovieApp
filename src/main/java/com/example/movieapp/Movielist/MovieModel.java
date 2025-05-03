@@ -23,6 +23,6 @@ public class MovieModel {
     private  String poster;
     private List<String> genres;
     private List<String> backdrops;
-
+    private  List<String> reviewIds;
 
 }
