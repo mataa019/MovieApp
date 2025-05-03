@@ -18,19 +18,15 @@ public class MovieModel {
     public String getDirector() {
         return Director;
     }
-
     public Integer getYear() {
         return Year;
     }
-
     public void setName(String name) {
         Name = name;
     }
-
     public void setDirector(String director) {
         Director = director;
     }
-
     public void setYear(Integer year) {
         Year = year;
     }
