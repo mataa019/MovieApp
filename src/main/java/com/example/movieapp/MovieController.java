@@ -12,9 +12,8 @@ public class MovieController {
     MovieModel  model = new MovieModel("John Walker", "Mike", 2015);
 
     @GetMapping("/model/{getallMovies}")
-    public int GetListofMovies(@PathVariable String getallMovies)
+    public void GetListofMovies(@PathVariable String getallMovies)
     {
-
     }
 
 }
