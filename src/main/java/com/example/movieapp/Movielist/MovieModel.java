@@ -1,33 +1,20 @@
 package com.example.movieapp.Movielist;
 
+import org.bson.types.ObjectId;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import java.util.List;
+
+@Document(collation = "movies")
 public class MovieModel {
-    public String Name;
-    public  String Director;
-    public Integer Year;
+    private ObjectId id;
+    private String imdbId;
+    private String title;
+    private String releaseDate;
+    private  String trailerLink;
+    private  String poster;
+    private List<String> genres;
+    private List<String> backdrops;
 
-    public MovieModel(String name, String director, Integer year) {
-        Name = name;
-        Director = director;
-        Year = year;
-    }
 
-    public String getName() {
-        return Name;
-    }
-
-    public String getDirector() {
-        return Director;
-    }
-    public Integer getYear() {
-        return Year;
-    }
-    public void setName(String name) {
-        Name = name;
-    }
-    public void setDirector(String director) {
-        Director = director;
-    }
-    public void setYear(Integer year) {
-        Year = year;
-    }
 }
