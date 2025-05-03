@@ -2,6 +2,8 @@ package com.example.movieapp;
 
 import com.example.movieapp.Movielist.MovieModel;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -9,5 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class MovieController {
     MovieModel  model = new MovieModel("John Walker", "Mike", 2015);
 
+    @GetMapping("/model/{getallMovies}")
+    public int GetListofMovies(@PathVariable String getallMovies)
+    {
+
+    }
 
 }
